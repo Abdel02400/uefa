@@ -1,0 +1,19 @@
+.App {
+  text-align: center;
+}
+
+.ReactTable {
+  height: 100%;
+}
+
+.rt-td {
+  text-align: center;
+}
+
+.nameClub, .paysClub {
+  margin-top:50px;
+}
+
+.joueurClub{
+  font-size: 0.6rem;
+}
