@@ -1,4 +1,4 @@
-const https = require('https');
+﻿const https = require('https');
 const fs = require('fs');
 const cheerio = require('cheerio');
 const express = require('express');
@@ -31,13 +31,13 @@ const url = 'https://fr.uefa.com/uefachampionsleague/season=2019/clubs/';
 
 connection.then(res => {
     console.log("Mongodb connecté");
-    var path = getUEFALDCDOM();
-    /*var urlClubs = getClubsUrl('./uefa/uefa.html');
+    var path = getUEFALDCDOM(); // a éxécuter en premier
+    var urlClubs = getClubsUrl('./uefa/uefa.html');
     getCLUBSDOM(urlClubs);
     getCLUBSLogo(urlClubs);
     addClubsToBdd();
 
-    ClubRoute(app);*/
+    ClubRoute(app);
 
     app.listen(PORT, () => {
         console.log(`Serveur express écoutant le port ${PORT}...`)
